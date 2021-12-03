@@ -19,18 +19,28 @@ class SkillTableSeeder extends Seeder
     {
         DB::beginTransaction();
         try {
+            $now = now();
+
             $skills = [
                 [
                     'name' => 'js',
+                    'updated_at' => $now,
+                    'created_at' => $now,
                 ],
                 [
                     'name' => 'php',
+                    'updated_at' => $now,
+                    'created_at' => $now,
                 ],
                 [
                     'name' => 'html',
+                    'updated_at' => $now,
+                    'created_at' => $now,
                 ],
                 [
                     'name' => 'css',
+                    'updated_at' => $now,
+                    'created_at' => $now,
                 ],
             ];
 
